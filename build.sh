@@ -57,3 +57,4 @@ for i in out/tools/v8_gypfiles/gen-regexp-special-case.target.mk out/test_crypto
   sed -i 's/\-static//g' $i || echo "nevermind"
 done
 make -j"$(getconf _NPROCESSORS_ONLN)"
+chmod +x node
